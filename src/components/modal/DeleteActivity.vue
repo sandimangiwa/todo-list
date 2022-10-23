@@ -1,11 +1,11 @@
 <template>
   <q-dialog
-    data-cy="modal-delete"
     v-model="isShow"
     transition-show="slide-up"
     transition-hide="slide-down"
   >
     <q-card
+      data-cy="modal-delete"
       class="q-pa-md text-center"
       style="box-shadow: 0px 6px 10px 0px #0000001a; border-radius: 12px"
     >
@@ -15,7 +15,7 @@
         </q-avatar>
       </q-card-section>
       <q-card-section>
-        <div class="text-h6 text-weight-light">
+        <div class="text-h6 text-weight-light" data-cy="modal-delete-title">
           <div>
             {{
               type == "activity"
@@ -41,6 +41,7 @@
           v-close-popup
         />
         <q-btn
+          data-cy="modal-delete-confirm-button"
           style="padding: 8px 38px"
           rounded
           dense
@@ -51,7 +52,6 @@
           no-caps
           color="negative"
           v-close-popup
-          data-cy="modal-delete-confirm-button"
           @click="action"
         />
       </q-card-actions>

@@ -1,0 +1,73 @@
+// app global css in SCSS form
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.shadow-custome {
+  box-shadow: 0px 4px 10px 0px #0000001a;
+}
+
+.card-custome {
+  box-shadow: 0px 6px 10px 0px #0000001a;
+  border-radius: 12px;
+}
+
+//text-overflow
+@mixin text-overflow-ellipsis($val: 1) {
+  display: -webkit-box;
+  -webkit-line-clamp: $val;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.text-overflow-ellipsis-1 {
+  @include text-overflow-ellipsis(1);
+}
+.text-overflow-ellipsis-2 {
+  @include text-overflow-ellipsis(2);
+}
+.text-overflow-ellipsis-3 {
+  @include text-overflow-ellipsis(3);
+}
+.text-overflow-ellipsis-4 {
+  @include text-overflow-ellipsis(4);
+}
+.text-overflow-ellipsis-5 {
+  @include text-overflow-ellipsis(5);
+}
+
+//Container
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 85%;
+  }
+}

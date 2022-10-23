@@ -48,7 +48,7 @@
       <delete-activity
         ref="deleteConfirmation"
         :name="delete_item.title"
-        :callback="deleteActivity()"
+        :callback="deleteActivity"
       ></delete-activity>
     </section>
   </q-page>

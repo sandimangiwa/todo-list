@@ -11,7 +11,7 @@
     >
       <q-card-section>
         <q-avatar square size="6em" data-cy="modal-delete-icon">
-          <q-img src="src/assets/alert.svg"></q-img>
+          <q-img src="../../assets/alert.svg"></q-img>
         </q-avatar>
       </q-card-section>
       <q-card-section>

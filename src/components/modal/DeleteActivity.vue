@@ -1,11 +1,11 @@
 <template>
   <q-dialog
+    data-cy="modal-delete"
     v-model="isShow"
     transition-show="slide-up"
     transition-hide="slide-down"
   >
     <q-card
-      data-cy="modal-delete"
       class="q-pa-md text-center"
       style="box-shadow: 0px 6px 10px 0px #0000001a; border-radius: 12px"
     >

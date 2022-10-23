@@ -1,13 +1,11 @@
 <template>
   <q-dialog
+    data-cy="modal-information"
     v-model="isShow"
     transition-show="slide-down"
     transition-hide="slide-down"
   >
-    <q-card
-      data-cy="modal-information"
-      style="box-shadow: 0px 6px 10px 0px #0000001a; border-radius: 12px"
-    >
+    <q-card style="box-shadow: 0px 6px 10px 0px #0000001a; border-radius: 12px">
       <q-card-section class="row items-center">
         <q-icon
           data-cy="modal-information-icon"

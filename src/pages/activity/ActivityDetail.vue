@@ -99,7 +99,7 @@
           @click="togelAction"
           class="cursor-pointer"
           :width="$q.screen.lt.sm ? '80%' : '60%'"
-          src="src/assets/todo-empty-state.png"
+          src="../../assets/todo-empty-state.png"
         ></q-img>
       </div>
       <div v-else>

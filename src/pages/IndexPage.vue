@@ -27,7 +27,7 @@
           @click="addActivity"
           class="cursor-pointer"
           :width="$q.screen.lt.sm ? '80%' : '60%'"
-          src="src/assets/activity-empty-state.png"
+          src="../assets/activity-empty-state.png"
         ></q-img>
       </div>
       <div v-else class="row q-col-gutter-lg">

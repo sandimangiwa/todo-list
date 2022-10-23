@@ -5,7 +5,7 @@
       :to="'detail/' + activity.id"
       style="text-decoration: none; color: inherit"
     >
-      <q-card-section>
+      <q-card-section style="height: 100%">
         <div
           data-cy="activity-item-title"
           class="text-h6 text-overflow-ellipsis-5"

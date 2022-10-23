@@ -1,8 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="shadow-custome q-mb-lg q-py-lg" data-cy="header-title">
+    <q-header
+      class="shadow-custome q-mb-lg q-py-lg"
+      data-cy="header-background"
+    >
       <q-toolbar class="container">
-        <q-toolbar-title class="text-h5 text-bold text-uppercase q-py-sm">
+        <q-toolbar-title
+          class="text-h5 text-bold text-uppercase q-py-sm"
+          data-cy="header-title"
+        >
           To Do List App
         </q-toolbar-title>
       </q-toolbar>

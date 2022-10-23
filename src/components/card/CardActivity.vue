@@ -1,7 +1,6 @@
 <template>
-  <q-card class="card-custome" style="height: 234px">
+  <q-card data-cy="activity-item" class="card-custome" style="height: 234px">
     <router-link
-      data-cy="activity-item"
       :to="'detail/' + activity.id"
       style="text-decoration: none; color: inherit"
     >

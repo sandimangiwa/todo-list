@@ -43,12 +43,14 @@
         </div>
       </div>
     </section>
-    <delete-activity-success ref="deleteSuccess" />
-    <delete-activity
-      ref="deleteConfirmation"
-      :name="delete_item.title"
-      :callback="deleteActivity"
-    ></delete-activity>
+    <section>
+      <delete-activity-success ref="deleteSuccess" />
+      <delete-activity
+        ref="deleteConfirmation"
+        :name="delete_item.title"
+        :callback="deleteActivity()"
+      ></delete-activity>
+    </section>
   </q-page>
 </template>
 
@@ -115,8 +117,8 @@ export default {
       await api
         .delete(`/activity-groups/${delete_item.id}`)
         .then(() => {
-          getAllActivity();
           deleteSuccess.value.show();
+          getAllActivity();
         })
         .catch((err) => {
           console.log(err);

@@ -33,11 +33,10 @@
       <div v-else class="row q-col-gutter-lg">
         <div
           class="col-xs-6 col-sm-6 col-md-3 col-lg-2"
-          v-for="(activity, idx) in list_activity"
+          v-for="activity in list_activity"
           :key="activity.id"
         >
           <card-activity
-            :data-cy="'activity-item-' + idx"
             :activity="activity"
             :delete-activity-confirmation="deleteActivityConfirmation"
           />

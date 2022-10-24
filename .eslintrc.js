@@ -13,7 +13,7 @@ module.exports = {
     browser: true,
     "vue/setup-compiler-macros": true,
   },
-
+  // files: ["**/*.cy.{js,jsx,ts,tsx}"],
   // Rules order is important, please avoid shuffling them
   extends: [
     // Base ESLint recommended rules
@@ -29,6 +29,9 @@ module.exports = {
     // https://github.com/prettier/eslint-config-prettier#installation
     // usage with Prettier, provided by 'eslint-config-prettier'.
     "eslint:recommended",
+    // Add Cypress-specific lint rules, globals and Cypress plugin
+    // See https://github.com/cypress-io/eslint-plugin-cypress#rules
+    "plugin:cypress/recommended",
   ],
 
   plugins: [
